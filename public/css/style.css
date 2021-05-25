@@ -17,13 +17,14 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    color: #2e3136;
+    color: #FEFEFE;
     background-image: url("../img/background/road-forest.png");
     background-size: 1950px;
     background-position: top;
     background-repeat: no-repeat;
     background-color: #0E0F0B;
     font-size: 1.3em;
+    text-align: center;
 }
 
 a {
@@ -46,6 +47,8 @@ hr {
     opacity: 0.4;
 }
 
+/* MAIN NAVBAR */
+
 .logo-title {
     width: 150px;
 }
@@ -67,13 +70,23 @@ hr {
     margin-top: 40px !important;
 }
 
+/* FOOTER */
+
 footer {
     margin-top: 200px;
     color: #fefefe;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 footer .icon-social {
     font-size: 25px;
-    margin: 10px 15px;
+    margin: 10px 20px;
+}
+
+footer div a:hover {
+    letter-spacing: 1px;
+}
+
+footer div p {
+    letter-spacing: 3px;
 }
