@@ -14,7 +14,7 @@ class HomeController extends AbstractController
      */
     public function home()
     {
-        return $this->render("base.html.twig",["mot"=>"Bonjour"]);
+        return $this->render("portfolio_base.html.twig",["mot"=>"Bonjour"]);
     }
 
     /**

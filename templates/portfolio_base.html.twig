@@ -1,0 +1,45 @@
+{#  Twig template #}
+{% extends "template_base.html.twig" %}
+
+{# BODY #}
+{% block body %}
+    {% block header %}
+        <nav class="navbar fixed-top navbar-light">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle ml-auto" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="navbar-brand m-4"><img class="logo-title" src="img/logo/logo.png" alt="Audrey Antony"></span>
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                    <ul class="nav navbar-nav margin-supp">
+                        <li class="text-right"><a href="/">Home</a></li>
+                        <li class="text-right"><a href="#cv">Curriculum</a></li>
+                        <li class="text-right"><a href="#projects">Projects</a></li>
+                        <li class="text-right"><a href="#contact">Contact</a></li>
+                        <li>
+                            <hr>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    {% endblock %}
+    {% block content %}{% endblock %}
+    {% block footer %}
+        <footer class="text-center fixed-bottom">
+            <div class="container p-4">
+                <a class="d-inline" href="https://www.facebook.com/audrey.antony.calzi" target="_blank"><i class="fa fa-facebook fa-lg icon-social"></i></a>
+                <a class="d-inline" href="https://www.instagram.com/antony_audrey/?hl=fr" target="_blank"><i class="fa fa-instagram fa-lg icon-social"></i></a>
+                <a class="d-inline" href="https://github.com/audreyantony" target="_blank"><i class="fa fa-github fa-lg icon-social"></i></a>
+                <a class="d-inline" href="https://www.linkedin.com/in/audrey-antony-b7754084/" target="_blank"><i class="fa fa-linkedin fa-lg icon-social"></i></a>
+            </div>
+            <div class="text-center p-3">
+                © 2020 Copyright: Audrey Antony || audrey-antony.be
+            </div>
+        </footer>
+    {% endblock %}
+{% endblock %}
