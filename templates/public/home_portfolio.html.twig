@@ -1,0 +1,219 @@
+{% extends "portfolio_base.html.twig" %}
+
+{# CONTENT #}
+{% block content %}
+
+    <div class="container m-3">
+        <h1 id="main-title">
+            <span
+                    class="txt-rotate"
+                    data-period="2000"
+                    data-rotate='[ " ... ",
+                    "Hello World ! My name is Audrey :)",
+                    "I am a back-end web developer",
+                    "I love design",
+                    "I am passionate about code",
+                    "( and LOTR )",
+                    "Scroll down to learn more about me :)" ]'>
+            </span>
+        </h1>
+    </div>
+
+    <div class="container" id="about">
+        <div class="homemade-container">
+            <div class="homemade-cards cards-title">
+                <h2>
+                    About <br>
+                    Me
+                </h2>
+            </div>
+            <div class="homemade-cards cards-div">
+                <p>I’m a self-motivated, adaptable person who has developed a responsible approach to any task or situation that I am presented with. I have management skills from previous employment and some design skills from prior studies. I am very good at working with others. After a one-year and three-month web developer training at CF2m in Brussels, I aspire to find an end-of-study internship in the prospect of improving my skills (PHP, Javascript, HTML -CSS, Python ...), to carry on my learning and to acquire a first professional experience in the field.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <button data-toggle="collapse" data-target="#more" class="collapse-button">Do you want to know everything ?</button>
+        </div>
+
+        <div id="more" class="collapse container-fluid">
+
+            <div class="homemade-container">
+                <div class="homemade-cards cards-title hidden-title">
+                    <h2 class="vertical-right">
+                        Education
+                    </h2>
+                </div>
+                <div class="homemade-cards cards-div">
+                    <div class="container-in-cards">
+                        <div class="item-in-cards">
+                            <h6>Web <br>Developer</h6>
+                            <p>CF2m Training Center <br>
+                                01/2021 - 04/2021</p>
+                        </div>
+                        <div class="item-in-cards">
+                            <h6>Interior <br>Design</h6>
+                            <p>Lignes et Formations <br>
+                                09/2010 - 09/2013</p>
+                        </div>
+                        <div class="item-in-cards">
+                            <h6>Management <br>Science</h6>
+                            <p>Carcado High School <br>
+                                -> 2010</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="homemade-cards cards-title title-to-hide">
+                    <h2 class="vertical-right">
+                        Educa<br>tion
+                    </h2>
+                </div>
+            </div>
+
+            <div class="homemade-container">
+                <div class="homemade-cards cards-title">
+                    <h2>
+                        Skills
+                    </h2>
+                </div>
+                <div class="homemade-cards cards-div">
+                    <div class="container-in-cards small-item">
+                        <div class="item-in-cards">
+                            <h6>PHP</h6>
+                        </div>
+                        <div class="item-in-cards">
+                            <h6>JavaScript</h6>
+                        </div>
+                        <div class="item-in-cards">
+                            <h6>HTML | CSS</h6>
+                        </div>
+                        <div class="item-in-cards">
+                            <h6>Bootstrap</h6>
+                        </div>
+                        <div class="item-in-cards">
+                            <h6>Python</h6>
+                        </div>
+                        <div class="item-in-cards">
+                            <h6>CMS</h6>
+                        </div>
+                        <div class="item-in-cards">
+                            <h6>Git</h6>
+                        </div>
+                        <div class="item-in-cards">
+                            <h6>SQL</h6>
+                        </div>
+                        <div class="item-in-cards">
+                            <h6>Workbench</h6>
+                        </div>
+                        <div class="item-in-cards">
+                            <h6>Photoshop</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="homemade-container">
+                <div class="homemade-cards cards-title hidden-title">
+                    <h2 class="vertical-right">
+                        Work <br>
+                        Experience
+                    </h2>
+                </div>
+                <div class="homemade-cards cards-div">
+                    <div class="container-in-cards big-item">
+                        <div class="item-in-cards">
+                            <h6>Intermittent <br>Manager</h6>
+                            <p>Overstock<br>
+                                Braine L'Alleud</p>
+                            <p>03/2019 - 11/2019</p>
+                        </div>
+                        <div class="item-in-cards">
+                            <h6>Commercial <br></h6>
+                            <p>Overstock<br>
+                                Braine L'Alleud</p>
+                            <p>04/2014 - 03/2019</p>
+                        </div>
+                        <div class="item-in-cards">
+                            <h6>Head <br>Waitress</h6>
+                            <p>Saï Restaurant<br>
+                                Paris</p>
+                            <p>11/2011 - 09/2013</p>
+                        </div>
+                        <div class="item-in-cards">
+                            <h6>Head Waitress <br>Waitress</h6>
+                            <p>Interim<br>
+                                Paris</p>
+                            <p>08/2011 - 11/2011</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="homemade-cards cards-title title-to-hide">
+                    <h2 class="vertical-right">
+                        Employ <br>
+                        ment
+                    </h2>
+                </div>
+            </div>
+
+            <div class="container margin-supp">
+                <h4 class="row sub-title"> Langage </h4>
+                <div class="row">
+                    <div class="col-xs-6 list">
+                        <ul class="list-right">
+                            <li>
+                                <h6>French</h6>
+                                <p>Mother tongue</p>
+                            </li>
+                            <li>
+                                <h6>English</h6>
+                                <p>Good oral/written level</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 list">
+                        <ul class="list-left">
+                            <li>
+                                <h6>Dutch</h6>
+                                <p>Understood langage</p>
+                            </li>
+                            <li>
+                                <h6>German</h6>
+                                <p>Understood langage</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <h4 class="row sub-title"> Hobbies </h4>
+                <div class="row">
+                    <div class="col-xs-6 list">
+                        <ul class="list-right">
+                            <li>
+                                <h6>Travel the world</h6>
+                                <p>Once a year</p>
+                            </li>
+                            <li>
+                                <h6>Movies / Series</h6>
+                                <p>Nearly every day</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-6 list">
+                        <ul class="list-left">
+                            <li>
+                                <h6>Drawing / Painting</h6>
+                                <p>Every week</p>
+                            </li>
+                            <li>
+                                <h6>Renovating my house</h6>
+                                <p>On any occasion</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

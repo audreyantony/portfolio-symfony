@@ -1,0 +1,351 @@
+/*
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+    White : #FEFEFE;
+    Vert clair : #AFB669;
+    Vert foncé : #656E40;
+    Dark :#0E0F0B;
+*/
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #FEFEFE;
+    background-image: url("../../img/background/road-forest.png");
+    background-size: 1950px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #0F120C;
+    font-size: 1.3em;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #FEFEFE !important;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    text-shadow: 2px 2px 0 #0E0F0B;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: #AFB669 !important;
+    letter-spacing: 2px;
+    transition: 0.8s;
+    background-color: rgba(0,0,0,0) !important;
+}
+
+hr {
+    width: 40%;
+    opacity: 0.4;
+}
+
+/* MAIN NAVBAR */
+
+.logo-title {
+    width: 150px;
+}
+
+.navbar-toggle {
+    margin-top: 25px;
+}
+
+.navbar-toggle .icon-bar {
+    border: 1px solid #ddd; !important;
+}
+
+.navbar-collapse {
+    border-top: none !important;
+    box-shadow: none !important;
+}
+
+.margin-supp {
+    margin-top: 40px !important;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 200px;
+    color: #fefefe;
+    opacity: 0.7;
+    background-color: #0F120C ;
+}
+
+footer .icon-social {
+    font-size: 25px;
+    margin: 10px 20px;
+}
+
+footer div a:hover {
+    letter-spacing: 1px;
+}
+
+footer div p {
+    letter-spacing: 3px;
+}
+
+/* HOME PAGE */
+
+#main-title {
+    font-weight: 300;
+    font-size: 3em;
+    letter-spacing: 5px;
+    margin-top: 220px;
+    margin-bottom: 30vh;
+    height: 150px;
+}
+
+/* ABOUT */
+
+#about h2 {
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-top: 20%;
+    text-transform: uppercase;
+    font-size: 3em;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+#about p {
+    text-align: justify;
+}
+
+.homemade-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+}
+
+.homemade-container .homemade-cards {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.cards-title {
+    width: 20%;
+    margin: 2%;
+}
+
+.cards-div {
+    width: 70%;
+    margin: 2%;
+}
+
+.vertical-right {
+    float: right;
+}
+
+.vertical-center {
+    padding: 0 40%;
+}
+
+.container-in-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: start;
+    width: 100%;
+}
+
+.item-in-cards {
+    flex: 0 0 auto;
+    margin: 1%;
+    width: 29%;
+    min-width: 200px;
+    text-align: center;
+    border-left: 1px solid #AFB669;
+}
+
+.item-in-cards h6 {
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+
+.item-in-cards p {
+    text-align: center !important;
+    color: #656E40;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+.hidden-title {
+    display: none !important;
+}
+
+.title-to-hide {
+    display: block !important;
+}
+
+.small-item {
+    justify-content: start !important;
+    align-items: center;
+}
+
+.small-item .item-in-cards {
+    width: 16%;
+    min-width: 100px;
+    margin: 2% 4% 2% 0;
+}
+
+.small-item .item-in-cards h6 {
+    letter-spacing: 2px !important;
+    text-align: start;
+    padding-left: 10px;
+}
+
+.big-item .item-in-cards {
+    width: 46%;
+    min-width: 200px;
+    margin: 2% 0 2% 4%;
+}
+
+.big-item .item-in-cards h6 {
+    letter-spacing: 6px !important;
+}
+
+.list ul {
+    list-style-type: none;
+}
+
+.list ul li h6 {
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 4px;
+    position: relative;
+    top: 10px;
+    font-size: 12px;
+}
+
+.list ul li p {
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    color: #656E40;
+}
+
+.list .list-right {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.list .list-right li {
+    border-right: 1px solid #AFB669;
+    padding-right: 10px;
+}
+
+.list .list-right li p {
+    text-align: right !important;
+}
+
+.list .list-left {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.list .list-left li {
+    border-left: 1px solid #AFB669;
+    padding-left: 10px;
+}
+
+.list .list-left li p {
+    text-align: left !important;
+}
+
+.sub-title {
+    font-size: 2.2em;
+    font-weight: 100;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+.collapse-button {
+    position: relative;
+    padding: 1.5em 2.5em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    font-size: 0.8em;
+    margin: 1em 0.8em;
+    color: #FEFEFE;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.collapse-button::after, .collapse-button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 1px solid;
+    transition: all 0.6s ease;
+    border-radius: 0;
+}
+
+.collapse-button::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #AFB669;
+    border-right-color: #AFB669;
+}
+.collapse-button::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #AFB669;
+    border-left-color: #AFB669;
+}
+.collapse-button:hover:after, .collapse-button:hover:before {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 400px) {
+    #about h2 {
+        font-size: 2em;
+        writing-mode: horizontal-tb;
+        text-orientation: initial;
+    }
+    .cards-title {
+        width: 100%;
+        margin: 0;
+    }
+    .cards-div {
+        width: 100%;
+        margin: 0;
+    }
+    .vertical-right {
+        float: none;
+    }
+    .hidden-title {
+        display: block !important;
+    }
+    .title-to-hide {
+        display: none !important;
+    }
+}
