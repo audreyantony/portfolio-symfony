@@ -22,7 +22,7 @@ body {
     background-size: 1950px;
     background-position: top;
     background-repeat: no-repeat;
-    background-color: #0E0F0B;
+    background-color: #0F120C;
     font-size: 1.3em;
     text-align: center;
     scroll-behavior: smooth;
@@ -77,6 +77,7 @@ footer {
     margin-top: 200px;
     color: #fefefe;
     opacity: 0.7;
+    background-color: #0F120C ;
 }
 
 footer .icon-social {
@@ -99,5 +100,147 @@ footer div p {
     font-size: 3em;
     letter-spacing: 5px;
     margin-top: 220px;
-    height: 250px;
+    margin-bottom: 30vh;
+    height: 150px;
+}
+
+/* ABOUT */
+
+#about h2 {
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-top: 20%;
+    text-transform: uppercase;
+    font-size: 3em;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+#about p {
+    text-align: justify;
+}
+
+.homemade-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+}
+
+.homemade-container .homemade-cards {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.cards-title {
+    width: 20%;
+    margin: 2%;
+}
+
+.cards-div {
+    width: 70%;
+    margin: 2%;
+}
+
+.vertical-right {
+    float: right;
+}
+
+.container-in-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: start;
+    width: 100%;
+}
+
+.item-in-cards {
+    flex: 0 0 auto;
+    margin: 1%;
+    width: 29%;
+    min-width: 200px;
+    text-align: center;
+    border-left: 1px solid #AFB669;
+}
+
+.item-in-cards h6 {
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+
+.item-in-cards p {
+    text-align: center !important;
+    color: #656E40;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+.hidden-title {
+    display: none !important;
+}
+
+.title-to-hide {
+    display: block !important;
+}
+
+.small-item {
+    justify-content: start !important;
+    align-items: center;
+}
+
+.small-item .item-in-cards {
+    width: 16%;
+    min-width: 100px;
+    margin: 2% 4% 2% 0;
+}
+
+.small-item .item-in-cards h6 {
+    letter-spacing: 2px !important;
+    text-align: start;
+    padding-left: 10px;
+}
+
+.big-item .item-in-cards {
+    width: 46%;
+    min-width: 200px;
+    margin: 2% 0 2% 4%;
+}
+
+.big-item .item-in-cards h6 {
+    letter-spacing: 6px !important;
+}
+
+@media screen and (max-width: 400px) {
+    #about h2 {
+        font-size: 2em;
+        writing-mode: horizontal-tb;
+        text-orientation: initial;
+    }
+    .cards-title {
+        width: 100%;
+        margin: 0;
+    }
+    .cards-div {
+        width: 100%;
+        margin: 0;
+    }
+    .vertical-right {
+        float: none;
+    }
+    .hidden-title {
+        display: block !important;
+    }
+    .title-to-hide {
+        display: none !important;
+    }
 }
