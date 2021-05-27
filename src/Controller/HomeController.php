@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Projects;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -14,20 +15,29 @@ class HomeController extends AbstractController
      */
     public function home()
     {
+        $project = new Projects();
+        $project->setTitle('Title');
+        $project->setDescription('Description');
+        $project->setUrl("https://url.com");
+        $project->setImgName("img");
+        $project->setImgAlt("alt img");
+        $project->getImgTitle("title img");
+
         return $this->render("public/home_portfolio.html.twig",[
-            "mot"=>"Bonjour",
-            "nom"=>"Audrey"
+            "permission"=> "public",
+            "project"=>$project
         ]);
     }
 
     /**
-     * @Route("/params/{name}", name="name", defaults={"name": "Huguette"}, methods={"GET"})
-     * @param string $name
-     * @return Response
+     * @Route("/admin-home", name="admin home")
      */
-    public function params(string $name)
+    public function adminHome()
     {
-        return new Response("Boujour toi : $name");
+        return $this->render("admin/home_admin_portfolio.html.twig",[
+            "permission"=> "admin",
+            "hello"=>'coucou'
+        ]);
     }
 
 }

@@ -3,18 +3,18 @@
 {# CONTENT #}
 {% block content %}
 
-    <div class="container m-3">
+    <div class="container-fluid absolute-title">
         <h1 id="main-title">
             <span
                     class="txt-rotate"
                     data-period="2000"
                     data-rotate='[ " ... ",
-                    "Hello World ! My name is Audrey :)",
+                    "Hello World ! My name is Audrey ʕ•ᴥ•ʔ",
                     "I am a back-end web developer",
                     "I love design",
                     "I am passionate about code",
                     "( and LOTR )",
-                    "Scroll down to learn more about me :)" ]'>
+                    "Scroll down to learn more about me !" ]'>
             </span>
         </h1>
     </div>
@@ -211,6 +211,40 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="container margin-supp">
+        <div class="row">
+            <div class="col-xs-4">
+                <h2>{{ project.title }}</h2>
+                <h4>{{ project.description }}</h4>
+                <p>{{ project.url }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid margin-supp" id="contact">
+        <div class="row">
+            <div class="col-xs-4 contact-div"></div>
+            <div class="col-xs-4 contact-div">
+                <div class="contact-info">
+                    <h3>Contact</h3>
+                    <form method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="your name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="your e-mail">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="your remarks, thoughts or questions"></textarea>
+                        </div>
+                        <button type="submit" class="collapse-button">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-xs-4 contact-div">
+
             </div>
         </div>
     </div>
