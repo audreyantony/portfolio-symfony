@@ -17,11 +17,11 @@ class HomeController extends AbstractController
     {
         $project = new Projects();
         $project->setTitle('Title');
-        $project->setDescription('Description');
+        $project->setDescription('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet tincidunt odio. Fusce imperdiet cursus felis a lacinia. Quisque sagittis finibus ex, at faucibus mi ornare quis. Duis eu purus vitae libero rutrum blandit.');
         $project->setUrl("https://url.com");
-        $project->setImgName("img");
+        $project->setImgName("https://via.placeholder.com/250/0E0F0B/656E40?Text=Placeholder");
         $project->setImgAlt("alt img");
-        $project->getImgTitle("title img");
+        $project->setImgTitle("title img");
 
         return $this->render("public/home_portfolio.html.twig",[
             "permission"=> "public",

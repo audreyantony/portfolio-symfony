@@ -442,6 +442,55 @@ input::placeholder, textarea::placeholder {
     height: auto;
 }
 
+.container-flex-cards {
+    max-width: 1120px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.container-flex-cards h2 {
+    font-weight: 200;
+    display: block;
+    width: 100%;
+    letter-spacing: 5px;
+    margin: 120px auto 50px auto;
+}
+
+.item-flex-cards {
+    flex: 0 0 auto;
+    margin: 2%;
+    width: 250px;
+    border-left: 1px solid #AFB669;
+    text-align: left;
+}
+
+.item-flex-cards img {
+    width: 100%;
+}
+
+.item-flex-cards h4 {
+    font-weight: 300;
+    letter-spacing: 5px;
+    padding-left: 15px;
+    text-transform: uppercase;
+    margin: -10px auto 0 auto;
+    font-size: 1.8em;
+}
+
+.item-flex-cards p {
+    padding: 10px 15px;
+    text-align: justify;
+
+}
+
+.item-flex-cards a {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 400px) {
     #about h2 {
         font-size: 2em;
