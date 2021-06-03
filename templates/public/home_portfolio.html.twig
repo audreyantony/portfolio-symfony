@@ -214,41 +214,19 @@
             </div>
         </div>
     </div>
-    <div class="container margin-supp">
+    <div class="container-fluid margin-supp padding-sides">
         <div class="container">
-
+           <h2 class="project-h2">Projects</h2>
         </div>
         <div class="container-flex-cards">
+            {% for project in projects %}
             <div class="item-flex-cards">
-                <img src="{{ project.imgName }}" alt="{{ project.imgAlt }}" title="{{ project.imgTitle }}">
+                <img src="img/project_img/{{ project.imgName }}" alt="{{ project.imgAlt }}" title="{{ project.imgTitle }}">
                 <h4>{{ project.title }}</h4>
                 <p>{{ project.description }}</p>
-                <a href="{{ project.url }}" class="collapse-button pull-right">SEE THIS <i class="fa fa-caret-right"></i></a>
+                <a href="{{ project.url }}" class="collapse-button pull-right" target="_blank">SEE THIS <i class="fa fa-caret-right"></i></a>
             </div>
-            <div class="item-flex-cards">
-                <img src="{{ project.imgName }}" alt="{{ project.imgAlt }}" title="{{ project.imgTitle }}">
-                <h4>{{ project.title }}</h4>
-                <p>{{ project.description }}</p>
-                <a href="{{ project.url }}" class="collapse-button pull-right">SEE THIS <i class="fa fa-caret-right"></i></a>
-            </div>
-            <div class="item-flex-cards">
-                <img src="{{ project.imgName }}" alt="{{ project.imgAlt }}" title="{{ project.imgTitle }}">
-                <h4>{{ project.title }}</h4>
-                <p>{{ project.description }}</p>
-                <a href="{{ project.url }}" class="collapse-button pull-right">SEE THIS <i class="fa fa-caret-right"></i></a>
-            </div>
-            <div class="item-flex-cards">
-                <img src="{{ project.imgName }}" alt="{{ project.imgAlt }}" title="{{ project.imgTitle }}">
-                <h4>{{ project.title }}</h4>
-                <p>{{ project.description }}</p>
-                <a href="{{ project.url }}" class="collapse-button pull-right">SEE THIS <i class="fa fa-caret-right"></i></a>
-            </div>
-            <div class="item-flex-cards">
-                <img src="{{ project.imgName }}" alt="{{ project.imgAlt }}" title="{{ project.imgTitle }}">
-                <h4>{{ project.title }}</h4>
-                <p>{{ project.description }}</p>
-                <a href="{{ project.url }}" class="collapse-button pull-right">SEE THIS <i class="fa fa-caret-right"></i></a>
-            </div>
+            {% endfor %}
         </div>
     </div>
     <div class="container-fluid margin-supp" id="contact">
